@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+
+
+    .ngao img {
+        width: 100px;
+
+
+    }
+
+    .navtop {
+
+        background-color: #23568af1;
+        color: white;
+    }
+
+    .navtop a {
+        text-decoration: none;
+    }
+
+    #flag {
+        width: 100%;
+        height: 100%;
+
+
+        background-image: url('../images/thumb_2041_1180x132_0_0_crop.png');
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .top-bar-menu {
+        background-color: #034173;
+    }
+
+    #main-menu {
+        background-color: #057310;
+    }
+
+    .dropdown-menu {
+        background-color: #057310;
+    }
+
+    .right-sidebar-content .page-title,
+    .home-page-title {
+        background-color: #d7dcde;
+    }
+
+
+
+
+
+    /* Ensure container can position dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Hide dropdown menu initially */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        /* position directly below parent */
+        left: 0;
+        background-color: #fff;
+        /* customize as needed */
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    /* Show dropdown on hover over parent container */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Style dropdown links */
+    .dropdown-content a {
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        display: block;
+        background-color: green;
+    }
+
+    /* Hover state for each dropdown link */
+    .dropdown-content a:hover {
+        color: yellow
+    }
+</style>
+
+<body>
+    <ul class="nav navtop justify-content-end mt-0 text-white ">
+        <li class="nav-item">
+            <small> <a href="" class="mx-1 text-white ">Malalamiko </a> </small>&#124;
+        </li>
+        <li class="nav-item">
+            <small> <a href="" class="mx-1 text-white">Wasiliana Nasi </a> </small>&#124;
+        </li>
+        <li class="nav-item">
+            <small> <a href="" class="mx-1 text-white">Maswali ya Mara kwa Mara</a> </small>&#124;
+        </li>
+        <li class="nav-item">
+            <small> <a href="" class="mx-1 text-white">Barua pepe </a> </small>&#124;
+        </li>
+        <select name="" id="">
+            <option value="">kiswahili</option>
+            <option value="">English</option>
+        </select>
+        </li>
+        <form class="d-flex" role="search">
+            <input class="form-control me-0 sm-0 mx-2 bg-secondary" style="width: 70%;" type="search"
+                placeholder="Search" aria-label="Search" />
+            <span><i class="fa fa-search"></i></span>
+        </form>
+    </ul>
+    <div class="container w-100">
+        <div class="row">
+            <div class="images">
+                <div class="flag" id="flag">
+                    <div class="ngao">
+                        <img src="../images/ngao.png" class=" float-start" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="p m-auto text-white text-center">
+                            Jamhuri ya Muungano wa Tanzania
+                            Ofisi ya Rais Tawala za Mikoa na Serikali za Mitaa
+                        </p>
+                        <p class="p m-auto text-white text-center">
+                            Ofisi ya Rais Tawala za Mikoa na Serikali za Mitaa
+                        </p>
+                        <h2 class="text-white text-center"> Mkoa wa Morogoro</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row show  shadow ms-0 me-0 mt-1  justify-content-center" style="width:100%;">
+
+            <nav class="navbar mx-3 navbar-expand-lg navbar-dark bg-success" style="font-size: 10px;">
+                <div class="container-fluid small">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" text-white collapse navbar-collapse  " style="font-size: medium;"
+                        id="navbarNavDropdown">
+                        <ul class="navbar-nav small text-white">
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Mwanzo</a>
+
+                            </li>
+
+
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Kuhusu sisi</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Maelezo ya Mkoa</a>
+                                    <a href="#">Dira na Dhima</a>
+                                    <a href="#">Maadili ya msingi</a>
+                                    <a href="#">Mikakati</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Utawala</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Muundo wa tasisi</a>
+                                    <a href="#">Sehemu na vitango</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Wilaya</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Morogoro</a>
+                                    <a href="#">Mvemoro</a>
+                                    <a href="#">Gairo</a>
+                                    <a href="#">Malinyi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Halimashauli</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Gairo</a>
+                                    <a href="#">Ulango</a>
+                                    <a href="#">Mlimba</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Fursa za Uwekezaji</a>
+                                <div class="dropdown-content">
+                                    <a href="#">kilimo</a>
+                                    <a href="#">Ufugaji</a>
+                                    <a href="#">Uvuvi</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Huduma Zetu</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Hudumu za afya</a>
+                                    <a href="#">Huduma za Elimu</a>
+                                    <a href="#">Huduma za kilimo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-end border-light dropdown">
+                                <a class="nav-link active" href="#">Machapisho</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Miongozo mbalimbali</a>
+                                    <a href="#">majarida</a>
+                                    <a href="#">sheria ndogo</a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2 sm-3 border-light dropdown">
+                                <a class="nav-link active" href="#">Kituo cha Habari</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Taarifa kwa umma</a>
+                                    <a href="#">videos</a>
+                                    <a href="#">Picha</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mx-0  border-end border-light"></li>
+                            <a class="nav-link" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+        <div class="row shadow show me-0 ms-0 mt-2 border bordered">
+            <div class="col-md-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/thumb_1626_230x255_0_0_crop.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+
+                                <p> Dr.. Mussa Ali Mussa</p>
+                                <b>Katibu Tawala</b> <br>
+                                <a href="">Biography</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../images/thumb_1413_230x255_0_0_crop.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+                                <h6 class="card-title"><b>REGIONAL COMMISSIONER</b></h6>
+
+                                <p class="card-text"> Mhe. Adam Kighoma Malima</p>
+                                <p class="text-center"> <a href="">Biography <br>
+                                        Welcome Note</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 ">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../slideimage/thumb_2477_1130x480_0_0_auto.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block bg-dark">
+                                <p class="w-100 show bg-tertiary">Juni 20, 2025 Viongozi mbalimbali wa Serikali na Dini
+                                    walishiriki maadhimisho ya miaka 20 ya Chuo Kikuu cha Waislam Morogoro (MUM).</p>
+                           
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../slideimage/thumb_2480_1130x480_0_0_auto.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <p>Julai 14, 2025 Mkuu wa Mkoa wa Morogoro Mhe. Adam Kighoma Malima amezindua mpango wa
+                                    unywaji wa maziwa ya
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../slideimage/thumb_2481_1130x480_0_0_auto.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <p>Picha ya Menejimenti ya Mkoa wa Morogoro ikiongozwa na Katibu Tawala Dkt. Mussa Ali
+                                    Mussa (wa tano kutoka kulia)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row show shadow me-0 ms-0 mt-2">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="show shadow" for=""><b>Habari Mpya</b></label>
+                        <div class="card" style="width: 18rem;">
+
+                            <img src="../images/thumb_2494_357x210_0_0_crop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">RC MALIMA AZINDUA UJENZI WA STENDI ITAKAYOTUMIKA KUHUDUMIA ABIRIA WANAOSAFIRI
+                                    NA RELI MWENDOKASI
+                                </a>
+                                <p>
+                                    Posted on: July 24th, 2025
+                                    Mkuu wa Mkoa wa Morogoro, Mhe. Adam Kighoma Malima, amezindua rasmi ujenzi wa stendi
+                                    ya mabasi ambayo itaunganishwa na Kituo cha Reli ya Mwendokasi cha Jakaya Mrisho
+                                    Kikwete cha mji...</p>
+
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="shadow" for="">
+                            <h5><b>Matukio</b></h5>>
+                        </label>
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <p>Aug
+                                    01MAONESHO YA NANENANE KANDA YA MASHARIKI 2025
+                                    August 01, 2025 - July 08, 2025
+
+                                    12:01:am - 12:00:am</p>
+                                <hr>
+                                <p>May
+                                    05MAADHIMISHO YA MIAKA 80 YA HOSPITALI YA RUFAA YA MKOA WA MOROGORO.
+                                    May 05, 2025 - May 17, 2025
+
+                                    08:00:am - 06:00:am</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <label class="show shadow" for="">
+                            <h5><b>From PO-RALG</b></h5>
+                        </label>
+                        <div class="card" style="width: 18rem;">
+
+                            <img src="../images/thumb_2487_119x70_0_0_crop.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <b>[Video] Mfumo wa Mikopo ya 10% - Namna ya Kujisajili</b>
+
+                                <b>MWONGOZO WA UTEKELEZAJI WA MPANGO WA RUZUKU YA MBOLEA KWA MSIMU WA 2022/2023</b>
+
+                                <b>Mpango wa Maendeleo kwa Ustawi wa Taifa Ofisi ya Rais - TAMISEMI</b>
+
+                                <b>[Video] TAMISEMI YAPEWA BILION 536.6 FEDHA ZA MAPAMBANO DHIDI YA UVIKO 19</b>
+
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
